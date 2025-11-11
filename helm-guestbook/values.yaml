@@ -12,7 +12,17 @@ image:
 service:
   type: ClusterIP
   port: 8080
+env:
+  - name: SERVER_ADDRESS
+    value: "0.0.0.0"
 
+readinessProbe:
+  httpGet:
+    path: /
+    port: 8080
+  initialDelaySeconds: 15
+  periodSeconds: 10
+  timeoutSeconds: 5
 ingress:
   enabled: false
   annotations: {}
