@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository: maheanb/demo-greeting:1.0
+  repository: maheanb/demo-greeting
   tag: latest
   pullPolicy: IfNotPresent
 
