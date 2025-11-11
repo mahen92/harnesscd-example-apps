@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository: demo-greeting
+  repository: mydockerhubuser/demo-greeting:1.0
   tag: latest
   pullPolicy: IfNotPresent
 
