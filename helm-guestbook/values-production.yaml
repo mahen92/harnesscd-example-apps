@@ -1,2 +1,2 @@
-service:
-  type: LoadBalancer
+metadata:
+ namespace: "my-namespace-1"
