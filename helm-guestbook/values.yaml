@@ -4,6 +4,9 @@
 
 replicaCount: 3
 
+metadata:
+ namespace: "my-namespace"
+
 image:
   repository: hekai/gcr.io_heptio-images_ks-guestbook-demo_0.2
   tag: latest
